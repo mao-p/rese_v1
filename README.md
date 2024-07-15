@@ -2,6 +2,7 @@
 ### アプリ名
 Rese(リーズ)
 飲食店予約サービス
+https://github.com/mao-p/rese_v1/blob/main/2024-07-15%20231639.png?raw=true
 
 ### 作成した目的
 自社での予約サービスを所持するため
