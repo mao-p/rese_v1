@@ -37,9 +37,8 @@ laraver8
 2. Font Awesome: Font Awesome 5.15.3
 
 ### テーブル設計
-https://github.com/mao-p/rese_v1/blob/main/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202024-07-15%20225325.png?raw=true
-https://github.com/mao-p/rese_v1/blob/main/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202024-07-15%20225350.png?raw=true
-https://github.com/mao-p/rese_v1/blob/main/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202024-07-15%20225408.png?raw=true
+rese_v1/src/images/2024-07-16 table1.png
+
 ### ER図
 画像
 
