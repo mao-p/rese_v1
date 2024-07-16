@@ -9,7 +9,8 @@ https://github.com/mao-p/rese_v1/blob/main/2024-07-15%20231639.png?raw=true
 
 ### アプリケーションURL
 https://github.com/mao-p/rese_v1/blob/main/rese_v1/src/images/2024-07-16%20table1.png?raw=true
-
+https://github.com/mao-p/rese_v1/blob/main/2024-07-16%20table2.png?raw=true
+https://github.com/mao-p/rese_v1/blob/main/2024-07-16%20table3.png?raw=true
 
 ### 機能一覧
 1.会員登録
