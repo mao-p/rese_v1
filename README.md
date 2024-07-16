@@ -8,8 +8,8 @@ https://github.com/mao-p/rese_v1/blob/main/2024-07-15%20231639.png?raw=true
 自社での予約サービスを所持するため
 
 ### アプリケーションURL
+https://github.com/mao-p/rese_v1/blob/main/rese_v1/src/images/2024-07-16%20table1.png?raw=true
 
-rese_v1/src/images/2024-07-16 table1.png
 
 ### 機能一覧
 1.会員登録
