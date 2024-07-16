@@ -1,0 +1,57 @@
+.filters {
+    border: none !important;
+    padding: 5px !important;
+    border-radius: 5px !important;
+    background-color: #ffffff !important;
+    margin-bottom: 20px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 50% !important;
+    margin-left: auto !important;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5) !important;
+}
+
+.filters .form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+i.fas.fa-search.text-muted {
+    display: inline-block !important;
+    font-size: 12px !important;
+    margin-right: 5px !important;
+    vertical-align: middle !important;
+}
+
+.filters .form-control {
+    display: inline-block !important;
+    border: none !important;
+    padding: 2px 5px !important;
+    font-size: 12px !important;
+    vertical-align: middle !important;
+}
+
+.card-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 12px;
+}
+
+.details {
+    display: flex;
+    justify-content:flex-start;
+    margin-top: 10px;
+}
+
+.details .card-text+.card-text {
+    margin-left: 8px;
+}
+
+
+
+
+
+
