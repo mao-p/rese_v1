@@ -101,8 +101,8 @@
                                 <div class="card-body">
                                 <h5 class="card-title">{{ $restaurant->name }}</h5>
                                 <div class="details">
-                                    <p class="card-text"># {{ $restaurant->genre }}</p>
-                                    <p class="card-text"># {{ $restaurant->area }}</p>
+                                    <p class="card-text">#{{ $restaurant->genre }}</p>
+                                    <p class="card-text">#{{ $restaurant->area }}</p>
                                 </div>
                                     <div class="d-flex justify-content-between align-items-center">
                                     <a href="/restaurants/{{ $restaurant->id }}" class="btn btn-primary">詳しく見る</a>

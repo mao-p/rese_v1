@@ -26,8 +26,9 @@ Rese(リーズ)
 17.画像ストレージ保存
 
 ##使用技術
-PHP
+PHP8.1.2
 laraver8
+javascript
 外部ライブラリ
 1.Bootstrap: Bootstrap 4.5.2
 2.Font Awesome: Font Awesome 5.15.3
