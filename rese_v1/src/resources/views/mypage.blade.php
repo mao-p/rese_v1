@@ -1,14 +1,7 @@
 @extends('layouts.app')
 
 @section('styles')
-   <link rel="stylesheet" href="{{ asset('css/mypage.css') }}">
-   <style>
-       /* カスタムスタイルの追加 */
-       .favorites-section .favorite-card-container {
-           padding-left: 5px;
-           padding-right: 5px;
-       }
-   </style>
+<link rel="stylesheet" href="{{ asset('css/mypage.css') }}">
 @endsection
 
 @section('content')
@@ -61,7 +54,6 @@
                                             <button type="submit" class="custom-delete-button">予約をキャンセルする</button>
                                         </form>
                                         <!-- 予約内容を変更するボタン -->
-                                        <button class="btn btn-secondary mt-2 edit-reservation-button" data-reservation-id="{{ $reservation->id }}">予約内容を変更する</button>
                                         <a href="{{ route('reservations.edit', $reservation->id) }}" class="btn update-btn-primary">予約内容変更</a>
                                     </div>
                                 </div>
@@ -109,60 +101,10 @@
             </div>
         </div>
 
-<!-- 予約内容を変更するフォーム -->
-<div id="reservationChangeModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="reservationChangeModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="reservation-modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="reservationChangeModalLabel">予約内容を変更する</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form id="editReservationForm" action="" method="POST">
-                    @csrf
-                    @method('PUT')
-                    <div class="form-group">
-                        <label for="edit_reservation_date">予約日</label>
-                        <input type="date" class="form-control" id="edit_reservation_date" name="reservation_date" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="edit_reservation_time">予約時間</label>
-                        <input type="time" class="form-control" id="edit_reservation_time" name="reservation_time" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="edit_party_size">人数</label>
-                        <input type="number" class="form-control" id="edit_party_size" name="party_size" min="1" required>
-                    </div>
-                    <button type="submit" class="btn reservation-btn-primary">変更を保存する</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 <!-- JavaScript -->
 <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const editButtons = document.querySelectorAll('.edit-reservation-button');
-        const editReservationForm = document.getElementById('editReservationForm');
-        const reservationChangeModal = new bootstrap.Modal(document.getElementById('reservationChangeModal'));
 
-        editButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                const reservationId = this.dataset.reservationId;
-                editReservationForm.action = `/reservations/${reservationId}`;
-                reservationChangeModal.show();
-            });
-        });
-
-        // モーダルが閉じられたときにフォームをリセットする
-        reservationChangeModal.addEventListener('hidden.bs.modal', function () {
-            editReservationForm.reset();
-        });
-    });
-</script>
 
 @endsection

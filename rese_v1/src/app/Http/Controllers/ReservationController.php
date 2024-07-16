@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Reservation;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
+use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 class ReservationController extends Controller
 {
@@ -32,13 +33,17 @@ class ReservationController extends Controller
 
                 // トランザクションをコミット
                 \DB::commit();
-                
+
                 Session::forget('reservation_data');
+
+ 
+
                 // 成功時の処理
                 return redirect()->route('reservation.done')->with('success', '予約が完了しました。');
             } catch (\Exception $e) {
                 // トランザクションをロールバック
                 \DB::rollBack();
+
 
                 // エラーが発生した場合はエラーメッセージをセッションに保存してリダイレクト
                 return redirect()->route('reservation.done')->with('error', '予約の保存中にエラーが発生しました。');

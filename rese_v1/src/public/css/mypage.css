@@ -124,6 +124,10 @@ form button {
     max-width: 800px;
 }
 
+.favorite-card-text {
+    font-size: 12px;
+}
+
 .favorite-card-container {
     width: 100% !important;
     max-width: 500px !important;
@@ -137,7 +141,7 @@ form button {
 }
 
 .favorite-card-title {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -195,6 +199,16 @@ form button {
     background-color: rgb(108, 111, 109);
 }
 
+.favorite-card-details {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.favorite-card-details .card-text+.card-text {
+    margin-left: 8px;
+}
+
 
 /* 768px以下のスタイル（タブレット・スマートフォン向け） */
 @media (max-width: 768px) {
@@ -208,6 +222,8 @@ form button {
         margin-bottom: 20px;
     }
 }
+
+
 
 /* 768pxより大きいスタイル（デスクトップ向け） */
 @media (min-width: 769px) {
