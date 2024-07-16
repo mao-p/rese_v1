@@ -1,14 +1,16 @@
 # rese_v1
 ### アプリ名
 Rese(リーズ)<br>
-飲食店予約サービス　
+飲食店予約サービス<br>
+https://github.com/mao-p/rese_v1/blob/main/2024-07-15%20231639.png?raw=true
 
 
 ### 作成した目的
 自社での予約サービスを所持するため
 
 ### アプリケーションURL
-https://github.com/mao-p/rese_v1/blob/main/2024-07-15%20231639.png?raw=true
+https://github.com/mao-p/rese_v1.git
+
 
 ### 機能一覧
 1.会員登録
