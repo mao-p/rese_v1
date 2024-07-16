@@ -30,9 +30,10 @@ https://github.com/mao-p/rese_v1.git
 15.店名で検索する
 16.予約変更
 17.画像ストレージ保存
+18.飲食店評価機能
 
 ### 使用技術
-PHP
+PHP8.1.2<br>
 laraver8
 #### 外部ライブラリ
 1. Bootstrap: Bootstrap 4.5.2
@@ -51,10 +52,10 @@ https://github.com/mao-p/rese_v1/blob/main/2024-07-16%20ER.png?raw=true
 ### 環境構築
 1.docker-compose exec php bash
 
-2.laraverプロジェクトの作成
-composer create-project "laravel/laravel=8.*" . --prefer-dist
+2.laraverプロジェクトの作成<br>
+composer create-project "laravel/laravel=8.*" . --prefer-dist<br>
 
-3.Permission Denied エラーの解決方法
+3.Permission Denied エラーの解決方法<br>
 sudo chmod -R 777 src/*
 
 4.CDN経由でBootstrap CSSをインストール
@@ -66,8 +67,8 @@ sudo chmod -R 777 src/*
 6.CDN経由でBootstrap JavaScriptをインストール
 "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
 
-7.環境設定ファイルの作成
-cp .env.example .env
+7.環境設定ファイルの作成<br>
+cp .env.example .env<br>
 
 8.環境設定ファイルの編集
 .envファイルを開いて以下の設定を行う<br>
