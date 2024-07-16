@@ -44,7 +44,7 @@ laraver8
 https://github.com/mao-p/rese_v1/blob/main/2024-07-16%20table1.png?raw=true
 
 ### ER図
-画像
+https://github.com/mao-p/rese_v1/blob/main/2024-07-16%20ER.png?raw=true
 
 ### 環境構築
 1.docker-compose exec php bash
@@ -68,79 +68,87 @@ sudo chmod -R 777 src/*
 cp .env.example .env
 
 8.環境設定ファイルの編集
-.envファイルを開いて以下の設定を行う
-DB_CONNECTION=mysql
-DB_HOST=mysql
-DB_PORT=3306
-DB_DATABASE=laravel_db
-DB_USERNAME=laravel_user
-DB_PASSWORD=laravel_pass
+.envファイルを開いて以下の設定を行う<br>
+DB_CONNECTION=mysql<br>
+DB_HOST=mysql<br>
+DB_PORT=3306<br>
+DB_DATABASE=laravel_db<br>
+DB_USERNAME=laravel_user<br>
+DB_PASSWORD=laravel_pass<br>
 
-9.アプリケーションキーの生成
-php artisan key:generate
+9.アプリケーションキーの生成<br>
+php artisan key:generate<br>
 
-10.Laravelの登録・ログイン機能のセットアップ
-php artisan ui vue --auth
-npm install && npm run dev
+10.Laravelの登録・ログイン機能のセットアップ<br>
+php artisan ui vue --auth<br>
+npm install && npm run dev<br>
 
-11.マイグレーションファイル作成
-php artisan make:migration create_restaurants_table
-php artisan make:migration create_favorite_restaurants_table
-php artisan make:migration create_reservations_table
-php artisan make:migration create_reviews_table
-php artisan make:migration create_images_table
-マイグレーションファイル実行
-php artisan migrate
+11.マイグレーションファイル作成<br>
+php artisan make:migration create_restaurants_table<br>
+php artisan make:migration create_favorite_restaurants_table<br>
+php artisan make:migration create_reservations_table<br>
+php artisan make:migration create_reviews_table<br>
+php artisan make:migration create_images_table<br>
+マイグレーションファイル実行<br>
+php artisan migrate<br>
 
-12.シーダーファイルの作成
-php artisan make:seeder RestaurantSeeder
-シーダーファイルの実行
-php artisan db:seed
+12.シーダーファイルの作成<br>
+php artisan make:seeder RestaurantSeeder<br>
+シーダーファイルの実行<Br>
+php artisan db:seed<br>
 
-13.ビューファイル作成
-touch resources/views/detail.blade.php
-touch resources/views/done.blade.php
-touch resources/views/index.blade.php
-touch resources/views/mypage.blade.php
-touch resources/views/thanks.blade.php
-touch resources/views/update.blade.php
-touch resources/views/layouts/app.blade.php
+13.ビューファイル作成<br>
+touch resources/views/detail.blade.php<br>
+touch resources/views/done.blade.php<br>
+touch resources/views/index.blade.php<br>
+touch resources/views/mypage.blade.php<br>
+touch resources/views/thanks.blade.php<br>
+touch resources/views/update.blade.php<br>
+touch resources/views/layouts/app.blade.php<br>
 
-14.CSSファイル作成
-touch public/css/app.css
-touch public/css/detail.css
-touch public/css/index.css
-touch public/css/login.css
-touch public/css/mypage.css
-touch public/css/register.css
-外部よりインストール
+
+14.CSSファイル作成<br>
+touch public/css/app.css<br>
+touch public/css/detail.css<br>
+touch public/css/index.css<br>
+touch public/css/login.css<br>
+touch public/css/mypage.css<br>
+touch public/css/register.css<br>
+外部よりインストール<br>
 bootstrap.min.css
 
-15.コントローラー作成
-php artisan make:controller FavoriteController
-php artisan make:controller MyPageController
-php artisan make:controller ReservationController
-php artisan make:controller RestaurantController
-php artisan make:controller StorageController
-php artisan make:controller UserReservationController
-php artisan make:controller Auth/AuthenticatedSessionController
+15.コントローラー作成<br>
+php artisan make:controller FavoriteController<br>
+php artisan make:controller MyPageController<br>
+php artisan make:controller ReservationController<br>
+php artisan make:controller RestaurantController<br>
+php artisan make:controller StorageController<br>
+php artisan make:controller UserReservationController<br>
+php artisan make:controller ReviewController<br>
+php artisan make:controller Auth/AuthenticatedSessionController<br>
 
-16.モデルの作成
-php artisan make:model FavoriteRestaurant
-php artisan make:model Image
-php artisan make:model Reservation
-php artisan make:model Restaurant
-php artisan make:model User
+16.モデルの作成<br>
+php artisan make:model FavoriteRestaurant<br>
+php artisan make:model Image<br>
+php artisan make:model Reservation<br>
+php artisan make:model Restaurant<br>
+php artisan make:model User<br>
+php artisan make:model Review<br>
 
-17.バリデーション用リクエストフォームの作成
-php artisan make:request RegisterRequest
-php artisan make:request ReservationRequest
-php artisan make:request Auth/LoginRequest
+17.バリデーション用リクエストフォームの作成<br>
+php artisan make:request RegisterRequest<br>
+php artisan make:request ReservationRequest<br>
+php artisan make:request Auth/LoginRequest<br>
 
-18.ストレージリンクの作成（画像をストレージへ保存する）
-php artisan storage:link
+18.ストレージリンクの作成（画像をストレージへ保存する)<br>
+php artisan storage:link<br>
 
 
-##その他
-アカウントの種類
-テストユーザー（シーダーファイルに記載）
+##その他<br>
+アカウントの種類<br>
+テストユーザー（シーダーファイルに記載）<br>
+            'name' => 'Test User'<br>
+            'email' => 'test@example.com'<br>
+            'password' => 'password'
+
+        
