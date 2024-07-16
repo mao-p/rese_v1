@@ -38,7 +38,7 @@ laraver8
 2. Font Awesome: Font Awesome 5.15.3
 
 ### テーブル設計
-rese_v1/src/images/2024-07-16 table1.png
+https://github.com/mao-p/rese_v1/blob/main/2024-07-16%20table1.png?raw=true
 
 ### ER図
 画像
