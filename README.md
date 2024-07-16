@@ -1,18 +1,14 @@
 # rese_v1
 ### アプリ名
-Rese(リーズ)
+Rese(リーズ)<br>
 飲食店予約サービス　
-https://github.com/mao-p/rese_v1/blob/main/2024-07-15%20231639.png?raw=true
+
 
 ### 作成した目的
 自社での予約サービスを所持するため
 
 ### アプリケーションURL
-https://github.com/mao-p/rese_v1/blob/main/rese_v1/src/images/2024-07-16%20table1.png?raw=true
-
-https://github.com/mao-p/rese_v1/blob/main/2024-07-16%20table2.png?raw=true
-
-https://github.com/mao-p/rese_v1/blob/main/2024-07-16%20table3.png?raw=true
+https://github.com/mao-p/rese_v1/blob/main/2024-07-15%20231639.png?raw=true
 
 ### 機能一覧
 1.会員登録
@@ -41,7 +37,11 @@ laraver8
 2. Font Awesome: Font Awesome 5.15.3
 
 ### テーブル設計
-https://github.com/mao-p/rese_v1/blob/main/2024-07-16%20table1.png?raw=true
+https://github.com/mao-p/rese_v1/blob/main/rese_v1/src/images/2024-07-16%20table1.png?raw=true
+
+https://github.com/mao-p/rese_v1/blob/main/2024-07-16%20table2.png?raw=true
+
+https://github.com/mao-p/rese_v1/blob/main/2024-07-16%20table3.png?raw=true
 
 ### ER図
 https://github.com/mao-p/rese_v1/blob/main/2024-07-16%20ER.png?raw=true
